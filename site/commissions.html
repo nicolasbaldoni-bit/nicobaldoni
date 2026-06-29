@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commissions — Nico Baldoni</title>
+  <meta name="description" content="Architectural lighting commissions by Nico Baldoni — Mexico City, Atlanta, Chicago.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="index.html" class="top-nav-logo">Nico Baldoni</a>
+    <button class="top-nav-burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="top-nav-links">
+      <li><a href="works.html">Works</a></li>
+      <li><a href="commissions.html" class="active">Commissions</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-header">
+    <p class="page-label">Commissions</p>
+    <p class="page-sub">Light made for the place. Finished by the people in it.</p>
+  </header>
+
+  <main>
+    <!-- MEXICO CITY LOBBY -->
+    <section class="work-section">
+      <p class="section-label">Mexico City — Lobby</p>
+      <div class="section-desc">
+        <p>A skin of light that anchors Mikko into the building. Drawing from the language of the architecture and the adjacent sculpture, the lobby installation is a constantly changing tessellation of Corian panels, each carved at varying depths and densities, each mounted at a different angle. The variations in carving alter the translucency of the surface, so the light that passes through is never uniform. The building and the sculpture become one thing.</p>
+        <p>&nbsp;</p>
+        <p class="section-materials">Corian — LED</p>
+      </div>
+      <div class="gallery-row">
+        <div class="g-item" onclick="openLb(lobby,'Mexico City — Lobby.',0)"><img src="images/lobby/lobby-1.jpg" loading="lazy"></div>
+        <div class="g-item" onclick="openLb(lobby,'Mexico City — Lobby.',1)"><img src="images/lobby/lobby-2.jpg" loading="lazy"></div>
+        <div class="g-item" onclick="openLb(lobby,'Mexico City — Lobby.',2)"><img src="images/lobby/lobby-3.jpg" loading="lazy"></div>
+        <div class="g-item" onclick="openLb(lobby,'Mexico City — Lobby.',3)"><img src="images/lobby/lobby-4.jpg" loading="lazy"></div>
+      </div>
+    </section>
+
+    <!-- MEXICO CITY PORTE COCHERE -->
+    <section class="work-section">
+      <p class="section-label">Mexico City — Porte Cochere</p>
+      <div class="section-desc">
+        <p>Hanging chains of aluminum drop from the ceiling like vines, accentuating the verticality of the space. The repetition of links creates a rhythm that softens the architecture and pulls it toward something more organic. Light travels through each chain, shifting with movement and angle.</p>
+        <p>&nbsp;</p>
+        <p class="section-materials">Aluminum — LED</p>
+      </div>
+      <div class="gallery-row">
+        <div class="g-item" onclick="openLb(porte,'Mexico City — Porte Cochere.',0)"><img src="images/porte/porte-1.jpg" loading="lazy"></div>
+        <div class="g-item" onclick="openLb(porte,'Mexico City — Porte Cochere.',1)"><img src="images/porte/porte-2.jpg" loading="lazy"></div>
+        <div class="g-item" onclick="openLb(porte,'Mexico City — Porte Cochere.',2)"><img src="images/porte/porte-3.jpg" loading="lazy"></div>
+        <div class="g-item" onclick="openLb(porte,'Mexico City — Porte Cochere.',3)"><img src="images/porte/porte-4.png" loading="lazy"></div>
+        <div class="g-item" onclick="openLb(porte,'Mexico City — Porte Cochere.',4)"><img src="images/porte/porte-5.png" loading="lazy"></div>
+        <div class="g-item" onclick="openLb(porte,'Mexico City — Porte Cochere.',5)"><img src="images/porte/porte-6.png" loading="lazy"></div>
+        <div class="g-item" onclick="openLb(porte,'Mexico City — Porte Cochere.',6)"><img src="images/porte/porte-7.png" loading="lazy"></div>
+      </div>
+    </section>
+
+    <!-- ATLANTA -->
+    <section class="work-section">
+      <p class="section-label">Atlanta</p>
+      <div class="section-desc">
+        <p>Atlanta has burned twice. Sherman reduced it to ash in 1864. The Great Fire of 1917 took what had been rebuilt. Each time, the city rose from what remained. This commission is a meditation on that resilience — blown glass embers suspended in metal, catching and releasing light the way fire does. A city born twice from flame.</p>
+        <p>&nbsp;</p>
+        <p class="section-materials">Blown glass — Metal</p>
+      </div>
+      <div class="gallery-row">
+        <div class="g-item" onclick="openLb(atlanta,'Atlanta.',0)"><img src="images/atlanta/atlanta-1.jpg" loading="lazy"></div>
+        <div class="g-item" onclick="openLb(atlanta,'Atlanta.',1)"><img src="images/atlanta/atlanta-2.jpg" loading="lazy"></div>
+        <div class="g-item" onclick="openLb(atlanta,'Atlanta.',2)"><img src="images/atlanta/atlanta-3.jpg" loading="lazy"></div>
+      </div>
+    </section>
+
+    <!-- CHICAGO -->
+    <section class="work-section">
+      <p class="section-label">Chicago</p>
+      <div class="section-desc">
+        <p>A suspended constellation of bronze and glass, drawing from the visual languages that shaped Chicago's skyline. The geometry of Art Deco, the clarity of Mid-Century Modern, projected forward. Light moves through each glass element independently, animating the composition the way the city animates its streets.</p>
+        <p>&nbsp;</p>
+        <p class="section-materials">Bronze — Glass — LED</p>
+      </div>
+      <div class="gallery-row">
+        <div class="g-item" onclick="openLb(chicago,'Chicago.',0)"><img src="images/chicago/chicago-1.jpg" loading="lazy"></div>
+        <div class="g-item" onclick="openLb(chicago,'Chicago.',1)"><img src="images/chicago/chicago-2.png" loading="lazy"></div>
+        <div class="g-item" onclick="openLb(chicago,'Chicago.',2)"><img src="images/chicago/chicago-3.png" loading="lazy"></div>
+        <div class="g-item" onclick="openLb(chicago,'Chicago.',3)"><img src="images/chicago/chicago-4.png" loading="lazy"></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lb">
+    <button class="lb-close" onclick="closeLb()">Close</button>
+    <button class="lb-prev" onclick="shiftLb(-1)">&#8249;</button>
+    <img class="lb-img" id="lb-img" src="" alt="">
+    <p class="lb-caption" id="lb-cap"></p>
+    <button class="lb-next" onclick="shiftLb(1)">&#8250;</button>
+  </div>
+
+  <nav class="nav-panel" id="nav-panel">
+    <ul class="nav-links">
+      <li><a href="works.html">Works</a></li>
+      <li><a href="commissions.html">Commissions</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <footer>
+    <span class="footer-copy">&copy; Nico Baldoni</span>
+    <a href="contact.html" class="footer-link">Tell me about you.</a>
+  </footer>
+
+  <script src="nav.js"></script>
+  <script>
+    const lobby = [
+      "images/lobby/lobby-1.jpg","images/lobby/lobby-2.jpg",
+      "images/lobby/lobby-3.jpg","images/lobby/lobby-4.jpg"
+    ];
+    const porte = [
+      "images/porte/porte-1.jpg","images/porte/porte-2.jpg","images/porte/porte-3.jpg",
+      "images/porte/porte-4.png","images/porte/porte-5.png","images/porte/porte-6.png","images/porte/porte-7.png"
+    ];
+    const atlanta = [
+      "images/atlanta/atlanta-1.jpg","images/atlanta/atlanta-2.jpg","images/atlanta/atlanta-3.jpg"
+    ];
+    const chicago = [
+      "images/chicago/chicago-1.jpg","images/chicago/chicago-2.png",
+      "images/chicago/chicago-3.png","images/chicago/chicago-4.png"
+    ];
+
+    let lbImgs = [], lbIdx = 0;
+    function openLb(imgs, cap, i) {
+      lbImgs = imgs; lbIdx = i;
+      document.getElementById('lb-img').src = lbImgs[lbIdx];
+      document.getElementById('lb-cap').textContent = cap || '';
+      document.getElementById('lb').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function shiftLb(d) {
+      lbIdx = ((lbIdx + d) % lbImgs.length + lbImgs.length) % lbImgs.length;
+      document.getElementById('lb-img').src = lbImgs[lbIdx];
+    }
+    function closeLb() {
+      document.getElementById('lb').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    document.getElementById('lb').addEventListener('click', function(e) {
+      if (e.target === this) closeLb();
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeLb();
+      if (e.key === 'ArrowLeft') shiftLb(-1);
+      if (e.key === 'ArrowRight') shiftLb(1);
+    });
+    initTopNavBurger();
+    initGalleryRows();
+    initLightboxSwipe();
+  </script>
+</body>
+</html>
