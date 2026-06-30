@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nico Baldoni</title>
+  <meta name="description" content="Light finds nothing without you. Nico Baldoni is a light sculptor and installation artist based in Los Angeles. Founder of Forma Luz.">
+  <meta name="keywords" content="Nico Baldoni, light sculpture, installation art, Forma Luz, architectural lighting, Los Angeles artist">
+  <meta property="og:title" content="Nico Baldoni">
+  <meta property="og:description" content="Light finds nothing without you.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.nicobaldoni.com">
+  <meta property="og:image" content="https://www.nicobaldoni.com/images/archetto/archetto-1.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nico Baldoni">
+  <meta name="twitter:description" content="Light finds nothing without you.">
+  <meta name="twitter:image" content="https://www.nicobaldoni.com/images/archetto/archetto-1.jpg">
+  <link rel="canonical" href="https://www.nicobaldoni.com">
+  <link rel="alternate" hreflang="en" href="https://www.nicobaldoni.com/index.html">
+  <link rel="alternate" hreflang="es" href="https://www.nicobaldoni.com/index-es.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.nicobaldoni.com/index.html">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <button class="burger" id="burger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav-panel" id="nav-panel">
+    <ul class="nav-links">
+      <li><a href="works.html">Works</a></li>
+      <li><a href="commissions.html">Commissions</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="lang-toggle" style="position:static;margin-top:1.5rem;">
+      <a href="index.html" class="active" onclick="setLangChoice()">EN</a>
+      <span>/</span>
+      <a href="index-es.html" onclick="setLangChoice()">ES</a>
+    </div>
+    <div class="nav-social">
+      <a href="https://www.instagram.com/nicolasbaldoni" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+        </svg>
+      </a>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="nav-overlay"></div>
+  <section class="hero">
+    <video autoplay muted loop playsinline poster="images/archetto/archetto-1.jpg">
+      <source src="video/archetto.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <p class="hero-name">Nico Baldoni</p>
+    <p class="hero-tagline">Light finds nothing without you.</p>
+  </section>
+  <script src="nav.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nico Baldoni",
+    "url": "https://www.nicobaldoni.com",
+    "sameAs": [
+      "https://www.instagram.com/nicolasbaldoni"
+    ],
+    "jobTitle": "Light Sculptor and Installation Artist",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Forma Luz"
+    },
+    "description": "Nico Baldoni is a light sculptor and installation artist based in Los Angeles. Founder of Forma Luz.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Los Angeles",
+      "addressCountry": "US"
+    }
+  }
+  </script>
+  <script>initNav(); initLangRedirect('en');</script>
+</body>
+</html>
