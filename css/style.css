@@ -65,6 +65,24 @@ a { color: inherit; text-decoration: none; }
 .nav-social a { display: inline-flex; color: var(--dim); transition: color 0.3s; }
 .nav-social a:hover { color: var(--white); }
 .nav-social svg { width: 20px; height: 20px; fill: currentColor; }
+
+/* ── LANGUAGE TOGGLE ── */
+.lang-toggle {
+  position: fixed; top: 1.8rem; right: 1.8rem; z-index: 300;
+  display: flex; gap: 0.4rem; align-items: center;
+  font-size: 0.62rem; font-weight: 200; letter-spacing: 0.18em;
+}
+.lang-toggle a {
+  color: var(--dim); transition: color 0.3s;
+}
+.lang-toggle a.active { color: var(--white); }
+.lang-toggle a:hover { color: var(--white); }
+.lang-toggle span { color: var(--xdim); }
+
+.top-nav .lang-toggle {
+  position: static;
+  margin-left: 2rem;
+}
 .nav-overlay {
   position: fixed; inset: 0; z-index: 150;
   background: rgba(0,0,0,0.45); opacity: 0; pointer-events: none; transition: opacity 0.4s;
@@ -363,6 +381,14 @@ footer {
   }
   .top-nav-burger {
     display: flex;
+  }
+  .top-nav .lang-toggle {
+    margin-left: auto;
+    margin-right: 1rem;
+  }
+  .lang-toggle {
+    top: 1.4rem;
+    right: 4.5rem;
   }
 
   /* ── NAV PANEL: full width on mobile ── */

@@ -290,3 +290,30 @@ function initLightboxSwipe() {
     }
   }, { passive: true });
 }
+
+// ── LANGUAGE AUTO-DETECT (first visit only) ──
+function initLangRedirect(currentLang) {
+  const hasChosenLang = localStorage.getItem('langChoice');
+  if (hasChosenLang) return; // user already made a choice manually
+
+  const browserLang = navigator.language || navigator.userLanguage || '';
+  const prefersSpanish = browserLang.toLowerCase().startsWith('es');
+
+  const path = window.location.pathname;
+  const isSpanishPage = path.includes('-es.html') || path.endsWith('-es');
+
+  if (prefersSpanish && !isSpanishPage && currentLang === 'en') {
+    localStorage.setItem('langChoice', 'auto');
+    const esPath = path.replace('.html', '-es.html').replace(/^\/$/, '/index-es.html');
+    if (path === '/' || path.endsWith('/index.html') || path === '') {
+      window.location.replace('index-es.html');
+    } else {
+      window.location.replace(esPath);
+    }
+  }
+}
+
+// Call when user manually clicks a language toggle link
+function setLangChoice() {
+  localStorage.setItem('langChoice', 'manual');
+}

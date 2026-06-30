@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acerca de — Nico Baldoni</title>
+  <meta name="description" content="Nico Baldoni — escultor de luz y artista de instalaciones radicado en Los Ángeles. Fundador de Forma Luz.">
+  <link rel="alternate" hreflang="en" href="https://www.nicobaldoni.com/about.html">
+  <link rel="alternate" hreflang="es" href="https://www.nicobaldoni.com/about-es.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.nicobaldoni.com/about.html">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="index-es.html" class="top-nav-logo">Nico Baldoni</a>
+    <button class="top-nav-burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="top-nav-links">
+      <li><a href="works-es.html">Obras</a></li>
+      <li><a href="commissions-es.html">Comisiones</a></li>
+      <li><a href="about-es.html" class="active">Acerca de</a></li>
+      <li><a href="contact-es.html">Contacto</a></li>
+    </ul>
+    <div class="lang-toggle">
+      <a href="about.html" onclick="setLangChoice()">EN</a>
+      <span>/</span>
+      <a href="about-es.html" class="active" onclick="setLangChoice()">ES</a>
+    </div>
+  </nav>
+  <main>
+    <div class="about-wrap">
+      <div class="about-portrait">
+        <img src="images/portrait.jpg" alt="Nico Baldoni">
+      </div>
+      <div class="about-text">
+        <p class="about-statement">Nico Baldoni hace obra escultórica que vive en el límite entre la luz, la forma y la arquitectura. Cada pieza es una armadura, construida a partir de investigación de materiales, observación espacial y memoria cultural. La obra no termina cuando termina de hacerse. Vive en vos.</p>
+        <p class="about-bio">Nacido en Argentina. Radicado en Los Ángeles. Fundador de Forma Luz. Veinte años de trabajo en la intersección de la luz, la escultura y la arquitectura, en residencias privadas, espacios públicos y hoteles a lo largo de las Américas y Europa.</p>
+      </div>
+    </div>
+  </main>
+  <nav class="nav-panel" id="nav-panel">
+    <ul class="nav-links">
+      <li><a href="works-es.html">Obras</a></li>
+      <li><a href="commissions-es.html">Comisiones</a></li>
+      <li><a href="about-es.html">Acerca de</a></li>
+      <li><a href="contact-es.html">Contacto</a></li>
+    </ul>
+  </nav>
+  <div class="nav-overlay" id="nav-overlay"></div>
+  <footer>
+    <span class="footer-copy">&copy; Nico Baldoni</span>
+    <a href="contact-es.html" class="footer-link">Contame de vos.</a>
+  </footer>
+  <script src="nav.js"></script>
+  <script>initTopNavBurger();</script>
+</body>
+</html>
