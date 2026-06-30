@@ -383,12 +383,18 @@ footer {
     display: flex;
   }
   .top-nav .lang-toggle {
-    margin-left: auto;
+    margin-left: 0;
     margin-right: 1rem;
+    order: 2;
+  }
+  .top-nav-burger {
+    order: 3;
+  }
+  .top-nav-logo {
+    order: 1;
   }
   .lang-toggle {
-    top: 1.4rem;
-    right: 4.5rem;
+    position: static;
   }
 
   /* ── NAV PANEL: full width on mobile ── */
